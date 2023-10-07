@@ -1,113 +1,279 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import { FaChalkboardTeacher, FaGifts } from 'react-icons/fa';
+import { BsPeople } from 'react-icons/bs';
+import { GiChestnutLeaf } from 'react-icons/gi';
+import Link from 'next/link';
+import Accordion from './Components/Accordion/Accordion';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className='w-full flex flex-row pb-7'>
+        <div className='flex flex-col gap-y-5 m-auto w-[400px] justify-around'>
+          <h1 className='text-[#414141] font-bold text-4xl'>
+            Teach with us at Allgreenivy
+          </h1>
+          <p className='text-[#717171] text-sm'>
+            Become an instructor with Allgreenivy and change the agricultural
+            system positively
+          </p>
+          <button className='bg-[#121212] text-white rounded-md px-4 py-2 w-32 text-xs'>
+            Get Started
+          </button>
+        </div>
+        <div>
+          <img
+            src='/image1.png'
+            alt='Home Image'
+            className='h-[500px] m-auto w-[500px]'
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <h2 className='text-[#717171] font-semibold text-xl text-center my-10'>
+        Countless Benefits of Becoming Part of Our Teams
+      </h2>
+      <div className='flex flex-row justify-around w-full mt-5 pb-10'>
+        <div className='flex flex-col gap-y-4 w-1/5'>
+          <FaChalkboardTeacher className='text-4xl' />
+          <p className='text-[#414141] font-semibold text-sm'>Teach your way</p>
+          <p className='text-[#414141] font-light text-xs'>
+            Teach and sell your agricultural ebooks and host courses on
+            Allgreenivy. You'll have control over your content, unlimited
+            storage and students.
+          </p>
+        </div>
+        <div className='flex flex-col gap-y-4 w-1/5'>
+          <FaGifts className='text-4xl' />
+          <p className='text-[#414141] font-semibold text-sm'>Get Rewarded</p>
+          <p className='text-[#414141] font-light text-xs'>
+            Expand your professional network, enhance your skills. Earn income
+            through each paid enrollment and benefit from your hard work and
+            dedication.
+          </p>
+        </div>
+        <div className='flex flex-col gap-y-4 w-1/5'>
+          <BsPeople className='text-4xl' />
+          <p className='text-[#414141] font-semibold text-sm'>
+            Inspire Learners
+          </p>
+          <p className='text-[#414141] font-light text-xs'>
+            Share your expertise and assist learners in discovering their
+            passions, acquiring new abilities, and furthering their agri
+            professional growth
+          </p>
+        </div>
+        <div className='flex flex-col gap-y-4 w-1/5'>
+          <GiChestnutLeaf className='text-4xl' />
+          <p className='text-[#414141] font-semibold text-sm'>
+            Impact the Agro Industry
+          </p>
+          <p className='text-[#414141] font-light text-xs'>
+            Help grow the economy by sharing your knowledge in agriculture and
+            assisting people in the agro industry to pursue financial
+            opportunities.
+          </p>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <h2 className='text-[#717171] font-semibold text-xl text-center my-10'>
+        How to Begin
+      </h2>
+      <div className='flex flex-row w-[80%] m-auto justify-between py-7'>
+        <div className=''>
+          <img
+            src='/plan.png'
+            alt='Plan your content'
+            className='w-[300px] h-[270px]'
+          />
+        </div>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[#414141] font-semibold tex-md'>
+            Plan your content
+          </h3>
+          <p className='text-[#717171] text-xs'>
+            Begin with your passion and expertise in the agri-business sector,
+            then select a viable subject using our Marketplace Insights tool.
+            Your approach to teaching is entirely up to you.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <Link
+            href=''
+            className='inline-flex items-center text-[#226C2D] text-xs font-bold underline'
+          >
+            Get started
+          </Link>
+        </div>
+      </div>
+      <div className='flex flex-row w-[80%] m-auto justify-between py-7'>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[#414141] font-semibold tex-md'>
+            Record your video
+          </h3>
+          <p className='text-[#717171] text-xs'>
+            Record your course using simple equipment like a smartphone or DSLR
+            camera, and enhance audio quality with a quality microphone, If you
+            don’t like being on camera, screen recording is an option. You
+            simply record the process! it is suggested to have a minimum of two
+            hours of video content for a paid course.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+          <Link
+            href=''
+            className='inline-flex items-center text-[#226C2D] text-xs font-bold underline'
+          >
+            Get started
+          </Link>
+        </div>
+        <div>
+          <img
+            src='/record.png'
+            alt='Record your video'
+            className='w-[300px] h-[270px]'
+          />
+        </div>
+      </div>
+      <div className='flex flex-row w-[80%] m-auto justify-between py-7'>
+        <div>
+          <img
+            src='/create.png'
+            alt='Create e-book'
+            className='w-[300px] h-[270px]'
+          />
+        </div>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[#414141] font-semibold tex-md'>Create Ebooks</h3>
+          <p className='text-[#717171] text-xs'>
+            Start creating your ebook with basic tools, such as a text editor or
+            word processing software. Organize your content and incorporate
+            images to enhance the reading experience. Aim for at least 20 pages
+            of well-structured and engaging material for a paid ebook.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <Link
+            href=''
+            className='inline-flex items-center text-[#226C2D] text-xs font-bold underline'
+          >
+            Get started
+          </Link>
+        </div>
+      </div>
+      <div className='flex flex-row w-[80%] m-auto justify-between py-7'>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[#414141] font-semibold tex-md'>
+            Launch your course or ebook
+          </h3>
+          <p className='text-[#717171] text-xs'>
+            Gather initial ratings and reviews by promoting your ebook or course
+            through social media and professional networks. Your ebook will be
+            listed in our marketplace, allowing you to earn revenue through paid
+            enrollments.
           </p>
-        </a>
+          <Link
+            href=''
+            className='inline-flex items-center text-[#226C2D] text-xs font-bold underline'
+          >
+            Get started
+          </Link>
+        </div>
+        <div>
+          <img
+            src='/launch.png'
+            alt='Launch your course or ebook'
+            className='w-[300px] h-[270px]'
+          />
+        </div>
+      </div>
+      <dir className='flex flex-row w-full m-auto justify-between py-7 bg-gradient-to-r from-[#468f47] my-9'>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[white] font-semibold tex-md'>How We Help</h3>
+          <p className='text-[white] text-xs'>
+            At Allgreenivy, we believe in empowering our instructors to achieve
+            their full potential and make a positive impact on the world of
+            agriculture. That's why we provide ample resources and user-friendly
+            tools to help you create your first course or e-book with ease. Our
+            instructor dashboard and curriculum pages are designed to keep you
+            organized, so you can focus on what you do best - teaching.
+          </p>
+        </div>
+        <div>
+          <img
+            src='/last.jpeg'
+            alt='How we help'
+            className='w-[400px] h-[300px]'
+          />
+        </div>
+      </dir>
+      <div className='w-[80%] mx-auto'>
+        <h3 className='text-[#414141] font-semibold text-xl text-center mb-5'>
+          Join a Supportive Community and Achieve More Together
+        </h3>
+        <p className='text-center text-xs text-[#717171] mb-5'>
+          Our Instructor Support Team is here to answer your questions and
+          review your test video and preview your ebook, while our Teaching
+          Center gives you plenty of resources to help you through the process.
+          Plus, get the support of experienced instructors in our online
+          community.
+        </p>
+        <div className='flex flex-row justify-between py-5'>
+          <div>
+            <img src='/comm1.svg' alt='Community' className='w-[120px] mb-3' />
+            <p className='text-[#414141] font-semibold text-sm text-center'>
+              Bernerd Stone
+            </p>
+            <p className='text-[#717171] font-normal text-xs text-center'>
+              Ceo of Agrofarm
+            </p>
+          </div>
+          <div>
+            <img src='/comm2.svg' alt='Community' className='w-[120px] mb-3' />
+            <p className='text-[#414141] font-semibold text-sm text-center'>
+              Bernerd Stone
+            </p>
+            <p className='text-[#717171] font-normal text-xs text-center'>
+              Ceo of Agrofarm
+            </p>
+          </div>
+          <div>
+            <img src='/comm3.svg' alt='Community' className='w-[120px] mb-3' />
+            <p className='text-[#414141] font-semibold text-sm text-center'>
+              Bernerd Stone
+            </p>
+            <p className='text-[#717171] font-normal text-xs text-center'>
+              Ceo of Agrofarm
+            </p>
+          </div>
+          <div>
+            <img src='/comm4.svg' alt='Community' className='w-[120px] mb-3' />
+            <p className='text-[#414141] font-semibold text-sm text-center'>
+              Bernerd Stone
+            </p>
+            <p className='text-[#717171] font-normal text-xs text-center'>
+              Ceo of Agrofarm
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='flex flex-row w-[80%] m-auto justify-between py-7 mt-10'>
+        <div>
+          <img
+            src='/lastteach.png'
+            alt='Teach on Allgreenivy'
+            className='w-[300px] h-[270px]'
+          />
+        </div>
+        <div className='flex flex-col w-[300px] m-auto gap-y-3'>
+          <h3 className='text-[#414141] font-semibold tex-md'>
+            Teach on Allgreenivy
+          </h3>
+          <p className='text-[#717171] text-xs'>
+            Instructors from around the world teach millions of students on
+            Allgreenivy. We provide the tools and skills to equip and allow you
+            teach what you love.
+          </p>
+          <button className='bg-[#121212] text-white rounded-md px-4 py-2 w-32 text-xs'>
+            Teach with Us
+          </button>
+        </div>
+      </div>
+      <div className='bg-[#F5F5F5]'>
+        <Accordion />
       </div>
     </main>
-  )
+  );
 }
